@@ -1,0 +1,55 @@
+{
+  "name": "eslint-config-resultsdm",
+  "version": "2.0.0",
+  "description": "Results Driven Marketing's ESLint config, following our styleguide",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . || exit 0",
+    "tests-only": "babel-tape-runner ./test/test-*.js || exit 0",
+    "test": "parallelshell 'npm run lint' 'npm run tests-only' || exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/resultsdm/eslint-config-resultsdm"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "rdm",
+    "resultsdm",
+    "results driven marketing",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "James Reimer <jamesr@resultsdm.com> (https://twitter.com/@JamesReimerRDM)",
+  "contributors": [
+    {
+      "name": "James Reimer",
+      "email": "jamesr@resultsdm.com",
+      "url": "https://twitter.com/@JamesReimerRDM"
+    },
+    {
+      "name": "Nicholas Coates",
+      "email": "nickc@resultsdm.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/resultsdm/eslint-config-resultsdm/issues"
+  },
+  "homepage": "https://github.com/resultsdm/eslint-config-resultsdm",
+  "devDependencies": {
+    "angular": "^1.5.0",
+    "babel-tape-runner": "^2.0.0",
+    "eslint": "^1.10.3",
+    "eslint-plugin-angular": "^0.15.0",
+    "eslint-plugin-react": "^3.16.1",
+    "parallelshell": "^2.0.0",
+    "react": "^0.14.7",
+    "tape": "^4.4.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=1.0.0"
+  }
+}
